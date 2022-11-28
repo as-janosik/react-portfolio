@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/as-janosik/ReactPortfolio/static/css/main.6fc693e4.css",
+    "main.js": "/as-janosik/ReactPortfolio/static/js/main.16072f9e.js",
+    "index.html": "/as-janosik/ReactPortfolio/index.html",
+    "main.6fc693e4.css.map": "/as-janosik/ReactPortfolio/static/css/main.6fc693e4.css.map",
+    "main.16072f9e.js.map": "/as-janosik/ReactPortfolio/static/js/main.16072f9e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6fc693e4.css",
+    "static/js/main.16072f9e.js"
+  ]
+}

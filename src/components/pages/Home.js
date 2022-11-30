@@ -2,44 +2,68 @@ import React from 'react';
 import adminPortal from '../images/GroupProjectAdminPortal.png';
 import noteApp from '../images/NoteApp.png';
 import woogle from '../images/WoogleApp.png';
+import weather from '../images/WeatherApp.png';
+import schedule from '../images/scheduleApp.png';
+import Quiz from '../images/quizApp.png';
 
 export default function Home() {
   return (
-    <div class="container">
+    <div className="container">
       <h1>Home Page</h1>
       <p>
 Below you will find the projects I have worked on while at the University of Minnesota Full Stack Bootcamp:
       </p>
       <div class="container text-center">
-  <div class="row row-cols-2">
-    <div class="col-6">
-      Admin Portal
+  <div className="row row-cols-2">
+    <div className="col-6">
+      
       <br />
     <a href='https://cryptic-mountain-03281.herokuapp.com/'>Admin Portal</a>
     <br />
     <a href='https://github.com/as-janosik/AdoptMe'>Github Repo</a>
     <br />
-      <img src={adminPortal} class="img-fluid h-50" alt="Dog"/>
+      <img src={adminPortal} className="img-fluid h-50" alt="Dog"/>
       </div>
-    <div class="col-6">Note Taker App
+    <div className="col-6">
     <br />
     <a href='https://secret-tor-23431.herokuapp.com/'>Note Taker App</a>
     <br />
     <a href='https://github.com/as-janosik/Express_js_Challenge'>Github Repo</a>
     <br />
-      <img src={noteApp} class="img-fluid h-50" alt="Note App screen"/>
+      <img src={noteApp} className="img-fluid h-50" alt="Note App screen"/>
     </div>
-    <div class="col-6">Project 3
+    <div className="col-6">
     <br />
-    <a href='https://mark55kelly.github.io/Final-Fantasy-Chocobros//'>Note Taker App</a>
+    <a href='https://mark55kelly.github.io/Final-Fantasy-Chocobros//'>Woogle App</a>
     <br />
     <a href='https://github.com/Mark55Kelly/Final-Fantasy-Chocobros'>Github Repo</a>
     <br />
-      <img src={woogle} class="img-fluid h-50" alt="Author-Andrew Janosik"/>
+      <img src={woogle} className="img-fluid h-50" alt="Woogle page"/>
     </div>
-    <div class="col-6">Project 4</div>
-    <div class="col-6">Project 5</div>
-    <div class="col-6">Project 6</div>
+    <div className="col-6">
+    <br />
+    <a href='https://as-janosik.github.io/Challenge_6/'>Weather page</a>
+    <br />
+    <a href='https://github.com/as-janosik/Challenge_6'>Github Repo</a>
+    <br />
+      <img src={weather} className="img-fluid h-50" alt="weather app"/>
+    </div>
+    <div className="col-6">
+    <br />
+    <a href='https://as-janosik.github.io/Challenge_5/'>Schedule App</a>
+    <br />
+    <a href='https://github.com/as-janosik/Challenge_5'>Github Repo</a>
+    <br />
+      <img src={schedule} className="img-fluid h-50" alt="schedule app"/>
+    </div>
+    <div className="col-6">
+    <br />
+    <a href='https://as-janosik.github.io/Challenge_4/'>Quiz App</a>
+    <br />
+    <a href='https://github.com/as-janosik/Challenge_4'>Github Repo</a>
+    <br />
+      <img src={Quiz} className="img-fluid h-50" alt="Quiz app"/>
+    </div>
   </div>
 </div>
     </div>

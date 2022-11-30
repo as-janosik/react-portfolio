@@ -5,7 +5,7 @@ import '../styles/Header.css';
 // TODO: Create a styles object called "styles"
 const styles={
   heading: {
-    background: 'red',
+    background: 'darkRed',
     fontSize: '100px',
 }}
 
@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <header style={styles.heading} className="header">
-      <h1>Welcome</h1>
+      <h1>Welcome To my Portfolio</h1>
     </header>
   );
 }

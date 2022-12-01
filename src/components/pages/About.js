@@ -4,7 +4,7 @@ import profileImg from '../images/profile_pic.png';
 export default function About() {
   return (
     <div class="container">
-      <h1>About Page</h1>
+      <h1>About Me</h1>
       <p>
         Hello, My name is Andrew Janosik.  I started my software development journey back in 2015.  I went to NorthEast Wisconsin Technical College and recieved an associates degree in Software Development.
         While still in school I was hired into my first developer positon working with MSSQL and C# for a ATM company.  I learned a lot about automation and reverse engineering while there.

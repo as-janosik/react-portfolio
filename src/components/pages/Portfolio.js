@@ -6,10 +6,10 @@ import weather from '../images/WeatherApp.png';
 import schedule from '../images/scheduleApp.png';
 import Quiz from '../images/quizApp.png';
 
-export default function Home() {
+export default function Portfolio() {
   return (
     <div className="container">
-      <h1>Home Page</h1>
+      <h1>Portfolio Page</h1>
       <p>
 Below you will find the projects I have worked on while at the University of Minnesota Full Stack Bootcamp:
       </p>

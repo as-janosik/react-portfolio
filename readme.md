@@ -20,6 +20,12 @@
   ## Description of Project  
   Remake of my portfolio using react in a single page applicaiton.   
 
+  Repo:
+  https://github.com/as-janosik/react-portfolio
+
+  Deployment:
+  https://as-janosik.github.io/react-portfolio/#about
+
   ## Installation Instructions  
   npm i to install needed items.    
 

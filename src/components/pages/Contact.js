@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 
 export default function Contact() {
-// Here we set two state variables for firstName and lastName using `useState`
+  // Here we set two state variables for firstName and lastName using `useState`
   const [email, setEmail] = useState('');
   const [userName, setUserName] = useState('');
   const [message, setMessage] = useState('');
@@ -15,13 +15,36 @@ export default function Contact() {
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, username, and password
     if (inputType === 'email') {
       setEmail(inputValue);
     } else if (inputType === 'userName') {
       setUserName(inputValue);
-    } else if (inputType === 'message'){
+    } else {
       setMessage(inputValue);
+    }
+
+    if (inputType === 'email' && inputValue !== '') {
+      if (!validateEmail(email)) {
+        setErrorMessage('Email is invalid');
+        // We want to exit out of this code block if something is wrong so that the user can correct it
+        return;
+        // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+      }else{
+        setErrorMessage('');
+      }
+    }
+
+  };
+  const handleBlur = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    //const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either email, username, and password
+    if (inputValue === '') {
+      setErrorMessage('Name, email, and message required');
+      return;
     }
   };
 
@@ -49,45 +72,53 @@ export default function Contact() {
     <div>
       <h1>Contact Page</h1>
       <div>
-      <form className="form">
-        <input
-          value={userName}
-          name="userName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Name"
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="message"
-        />
-        <button type="button" onClick={handleFormSubmit}>
-          Submit
-        </button>
-      </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
+        <form>
+          <div className="form-group">
+            <input
+              value={userName}
+              name="userName"
+              onChange={handleInputChange}
+              onBlur={handleBlur}
+              type="text"
+              placeholder="Name"
+            />
+          </div>
+          <div className="form-group">
+            <input
+              value={email}
+              name="email"
+              onChange={handleInputChange}
+              onBlur={handleBlur}
+              type="email"
+              placeholder="email"
+            />
+          </div>
+          <input
+            value={message}
+            name="message"
+            onChange={handleInputChange}
+            onBlur={handleBlur}
+            type="text"
+            placeholder="message"
+          />
+          <button type="button" onClick={handleFormSubmit}>
+            Submit
+          </button>
+        </form>
+        {errorMessage && (
+          <div>
+            <p className="error-text text-danger">{errorMessage}</p>
+          </div>
+        )}
       </div>
       <p>
-        
-        <a href = "mailto: andrew.janosik@gmail.com">Send Email</a>
+
+        <a href="mailto: andrew.janosik@gmail.com">Send Email</a>
         <br />
-        Phone: 920-XXX-XXXX
+        Phone: 
+        <a href="tel:+920XXXXXXX">1 (920) XXX-XXXX</a>
         <br />
-        <a href = "https://github.com/as-janosik">Github</a>
+        <a href="https://github.com/as-janosik">Github</a>
       </p>
     </div>
   );

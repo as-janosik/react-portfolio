@@ -26,6 +26,8 @@
   Deployment:
   https://as-janosik.github.io/react-portfolio/#about
 
+  ![Application Screenshot](./src/components/images/appScreenshot.png)
+
   ## Installation Instructions  
   npm i to install needed items.    
 
@@ -36,7 +38,8 @@
   none  
 
   ## Test Instructions  
-  none  
+  Run the following command to enter dev mode. Please note, the resume download will not work in dev mode. 
+  npm run start 
 
   ## Questions  
   If you have other questions, feel free to connect via github at:

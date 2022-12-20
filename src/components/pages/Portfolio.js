@@ -67,7 +67,7 @@ export default function Portfolio() {
           </div>
           <div className="col-6">
             <br />
-            <a href='https://fotofusionme.herokuapp.com/'>Quiz App</a>
+            <a href='https://fotofusionme.herokuapp.com/'>FotoFusion App</a>
             <br />
             <a href='https://github.com/as-janosik/FotoFusion'>Github Repo</a>
             <br />

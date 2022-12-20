@@ -71,7 +71,7 @@ export default function Portfolio() {
             <br />
             <a href='https://github.com/as-janosik/FotoFusion'>Github Repo</a>
             <br />
-            <img src={filter} className="img-fluid h-50" alt="Quiz app" />
+            <img src={filter} className="img-fluid h-50" alt="FotoFusion app" />
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import woogle from '../images/WoogleApp.png';
 import weather from '../images/WeatherApp.png';
 import schedule from '../images/scheduleApp.png';
 import Quiz from '../images/quizApp.png';
+import filter from '../images/Filters_screen.png';
 
 export default function Portfolio() {
   return (
@@ -63,6 +64,14 @@ export default function Portfolio() {
             <a href='https://github.com/as-janosik/Challenge_4'>Github Repo</a>
             <br />
             <img src={Quiz} className="img-fluid h-50" alt="Quiz app" />
+          </div>
+          <div className="col-6">
+            <br />
+            <a href='https://fotofusionme.herokuapp.com/'>Quiz App</a>
+            <br />
+            <a href='https://github.com/as-janosik/FotoFusion'>Github Repo</a>
+            <br />
+            <img src={filter} className="img-fluid h-50" alt="Quiz app" />
           </div>
         </div>
       </div>
